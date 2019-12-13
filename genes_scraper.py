@@ -72,7 +72,7 @@ for i in range(942, len(gene_urls)):
         except:
             print('Error on: ' + url + ' line: ' + line)
     print('Competed: ' + str(global_count))
-    table_info.to_csv('my_gene_2_variant_tables.csv', mode='a', header=False)
+    table_info.to_csv('my_gene_2_gene_tables.csv', mode='a', header=False)
     table_info = pd.DataFrame(
         {'gene': [],
          'variant_id': [],
